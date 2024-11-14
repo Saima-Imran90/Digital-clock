@@ -1,0 +1,152 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    background-color: rgb(35, 36, 37);
+}
+
+.container {
+    width: 50%;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: auto;
+    position: relative;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.main {
+    width: 90%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    border-radius: 15px;
+    color: rgb(246, 248, 247);
+    font-size: 12rem;
+    gap: 5%;
+    position: relative;
+}
+
+#hour, #min, #sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 80%;
+    font-size: 8rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 20px ghostwhite;
+}
+
+button {
+    color: aliceblue;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid rgb(51, 50, 50);
+    background: transparent;
+    border-radius: 10px;
+    font-size: xx-large;
+    box-shadow: 5px 5px 5px lightblue;
+    margin-top: -40px;
+    text-align: center;
+}
+
+button a {
+    color: rgb(199, 164, 233);
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: rgb(51, 50, 50);
+    cursor: pointer;
+}
+
+
+@media (max-width: 1044px) {
+    .container {
+        width: 60%;  
+    }
+
+    .main {
+        font-size: 10rem;  
+    }
+
+    #hour, #min, #sec {
+        font-size: 6rem;  
+    }
+
+    button {
+        font-size: large;  
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        width: 70%;
+    }
+
+    .main {
+        font-size: 9rem;
+    }
+
+    #hour, #min, #sec {
+        font-size: 5rem;
+    }
+
+    button {
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .main {
+        font-size: 8rem;
+    }
+
+    #hour, #min, #sec {
+        font-size: 4rem;
+    }
+
+    button {
+        font-size: medium;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .container {
+        width: 90%;
+    }
+
+    .main {
+        font-size: 7rem;
+    }
+
+    #hour, #min, #sec {
+        font-size: 3.5rem;
+    }
+
+    button {
+        font-size: large;
+    }
+}
+
